@@ -28,6 +28,6 @@ Rscript packages.r
 
 ## **Requirements**
 
-* R (tested in R version xxx).
+* R (tested in R version 3.6.3 - Holding the Windsock).
 
 
