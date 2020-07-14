@@ -22,12 +22,12 @@ Rscript packages.r
 ```
 **4.** Set the working directory to ``CCLE_heterogeneity`` 
 
-**5.** Run one of the 4 main code modules (i.e. xxx.r, yyy.r, www.r, zzz.r). Output files will be saved in the ``Output`` directory. 
+**5.** Run one of the 4 main code modules (i.e. module1_expr_heterogeneity.r, module2_rhp.r, module3_invivo_comp.r, module4_gen_heterogeneity.r). Output files will be saved in the ``Output`` directory. 
 
 ## General notes
 
 ## **Requirements**
 
-* R (tested in R version 3.6.3 - Holding the Windsock).
+* R (tested in version 3.6.3).
 
 
