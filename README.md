@@ -26,6 +26,10 @@ Rscript packages.r
 
 ## General notes
 
+* Please, note that due to the stochastic nature of methods such as T-distributed Stochastic Neighbor Embedding (t-SNE) and nonnegative matrix factorization (NMF) results might slightly differ dependending on the R/R packages version.
+
+* As outputs are already provided in the Expected_results directory, it is possible to run each code module independently.
+
 ## **Requirements**
 
 * R (tested in version 3.6.3).
