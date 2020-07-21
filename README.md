@@ -18,11 +18,17 @@ git clone https://github.com/gabrielakinker/CCLE_heterogeneity.git
 
 **3.** Install required R packages
 ```
-Rscript packages.r
+Rscript packages.R
 ```
 **4.** Set the working directory to ``CCLE_heterogeneity`` 
 
-**5.** Run one of the 4 main code modules (i.e. module1_expr_heterogeneity.r, module2_rhp.r, module3_invivo_comp.r, module4_gen_heterogeneity.r). Output files will be saved in the ``Output`` directory. 
+**5.** Run one of the 4 main code modules
+* module1_expr_heterogeneity.R
+* module2_rhp.R
+* module3_invivo_comp.R
+* module4_gen_heterogeneity.R 
+
+**6.** Output files will be saved in the ``Output`` directory. 
 
 ## General notes
 
