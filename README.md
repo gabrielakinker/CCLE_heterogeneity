@@ -6,27 +6,27 @@ This resource provides the R code to reproduce key results described in Kinker e
 The analyses are divided in 4 main modules:  
 **1.** Identifying discrete and continuous patterns of expression heterogeneity within cell lines and human tumors.  
 **2.** Definying heterogeneity patterns that are shared between multiple cell lines and between multiple human tumors (i.e. recurrent heterogeneous programs, RHPs).  
-**3.** Comparying RHPs found in cell lines to heterogeneity programs observed in human tumor samples.   
-**4.** Evaluating the association between expression and genetic heterogeneity in cell lines. 
+**3-4.** Comparying RHPs found in cell lines to RHPs found in human tumor samples.   
+**5-6.** Evaluating the association between expression and genetic heterogeneity in cell lines. 
 
-## Getting Started
+## Getting started
 **1.** Clone Github repository 
 ```
 git clone https://github.com/gabrielakinker/CCLE_heterogeneity.git
 ```
-**2.** Download the data provided in the [Single Cell Portal](https://singlecell.broadinstitute.org/single_cell/study/SCP542/pan-cancer-cell-line-heterogeneity) (CCLE_heterogeneity_Rfiles.zip) into the ``CCLE_heterogeneity`` GitHub directory. 
+**2.** Download the data provided in the [Single Cell Portal](https://singlecell.broadinstitute.org/single_cell/study/SCP542/pan-cancer-cell-line-heterogeneity) (CCLE_scRNAseq_github.zip) into the ``CCLE_heterogeneity`` GitHub directory. 
 
-**3.** Install required R packages
+**3.** Set the working directory to ``CCLE_heterogeneity`` 
+
+**4.** Install required R packages
 ```
 Rscript packages.R
 ```
-**4.** Set the working directory to ``CCLE_heterogeneity`` 
+**5.** Run one of the 6 code modules in R
+* module1_expr_heteroge.R         * module4_vitro_vs_vivoII.R
+* module2_rhp.R                   * module5_cna_subclones.R
+* module3_vitro_vs_vivoI.R        * module6_subclones_vs_expr_heteroge.R
 
-**5.** Run one of the 4 main code modules
-* module1_expr_heterogeneity.R
-* module2_rhp.R
-* module3_invivo_comp.R
-* module4_gen_heterogeneity.R 
 
 **6.** Output files will be saved in the ``Output`` directory. 
 
