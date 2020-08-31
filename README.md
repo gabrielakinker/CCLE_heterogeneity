@@ -3,7 +3,7 @@ Pan-cancer single cell RNA-seq uncovers recurring programs of cellular heterogen
 
 This resource provides the R code to reproduce key results described in Kinker et al. "Pan-cancer single cell RNA-seq uncovers recurring programs of cellular heterogeneity".
 
-The analyses are divided in 6 main modules:  
+The analyses are divided into 6 main modules:  
 **1.** Identifying discrete and continuous patterns of expression heterogeneity within cell lines and human tumors.  
 **2.** Definying heterogeneity patterns that are shared between multiple cell lines and between multiple human tumors (i.e. recurrent heterogeneous programs, RHPs).  
 **3-4.** Comparying RHPs found in cell lines to RHPs found in human tumor samples.   
