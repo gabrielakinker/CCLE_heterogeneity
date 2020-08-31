@@ -14,11 +14,17 @@ The analyses are divided in 6 main modules:
 ```
 git clone https://github.com/gabrielakinker/CCLE_heterogeneity.git
 ```
-**2.** Download the data provided in the [Single Cell Portal](https://singlecell.broadinstitute.org/single_cell/study/SCP542/pan-cancer-cell-line-heterogeneity) (CCLE_scRNAseq_github.zip) into the ``CCLE_heterogeneity`` GitHub directory. 
 
-**3.** Set the working directory to ``CCLE_heterogeneity`` 
+**2.** Set the working directory to ``CCLE_heterogeneity`` 
 
-**4.** Install required R packages
+**3.** Download the data provided in the [Single Cell Portal](https://singlecell.broadinstitute.org/single_cell/study/SCP542/pan-cancer-cell-line-heterogeneity) (CCLE_scRNAseq_github.zip) into the ``CCLE_heterogeneity`` GitHub directory. 
+
+**4.** Extract files 
+```
+tar -xvf CCLE_scRNAseq_github.tar.gz --strip-components 0
+```
+
+**5.** Install required R packages
 ```
 Rscript packages.R
 ```
