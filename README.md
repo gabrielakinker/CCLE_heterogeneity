@@ -17,7 +17,7 @@ git clone https://github.com/gabrielakinker/CCLE_heterogeneity.git
 
 **2.** Set the working directory to ``CCLE_heterogeneity`` 
 
-**3.** Download the data provided in the [Single Cell Portal](https://singlecell.broadinstitute.org/single_cell/study/SCP542/pan-cancer-cell-line-heterogeneity) [CCLE_scRNAseq_github.zip](https://singlecell.broadinstitute.org/single_cell/data/public/SCP542/pan-cancer-cell-line-heterogeneity?filename=CCLE_scRNAseq_github.zip) into the ``CCLE_heterogeneity`` GitHub directory. 
+**3.** Download the data provided ([CCLE_scRNAseq_github.zip](https://singlecell.broadinstitute.org/single_cell/data/public/SCP542/pan-cancer-cell-line-heterogeneity?filename=CCLE_scRNAseq_github.zip)) into the ``CCLE_heterogeneity`` GitHub directory. 
 
 **4.** Extract files 
 ```
