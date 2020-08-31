@@ -9,26 +9,28 @@ The analyses are divided into 6 main modules:
 **3-4.** Comparying RHPs found in cell lines to RHPs found in human tumor samples.   
 **5-6.** Evaluating the association between expression and genetic heterogeneity in cell lines. 
 
+For questions, please contact gabriela.kinker@gmail.com
+
 ### Getting started
-**1.** Clone Github repository 
+**1.** Clone Github repository. 
 ```
 git clone https://github.com/gabrielakinker/CCLE_heterogeneity.git
 ```
 
-**2.** Set the working directory to ``CCLE_heterogeneity`` 
+**2.** Set the working directory to ``CCLE_heterogeneity``. 
 
 **3.** Download the data provided ([CCLE_scRNAseq_github.zip](https://singlecell.broadinstitute.org/single_cell/data/public/SCP542/pan-cancer-cell-line-heterogeneity?filename=CCLE_scRNAseq_github.zip)) into the ``CCLE_heterogeneity`` GitHub directory. 
 
-**4.** Extract files 
+**4.** Unzip files. 
 ```
-tar -xvf CCLE_scRNAseq_github.tar.gz --strip-components 0
+unzip CCLE_scRNAseq_github.zip && mv CCLE_scRNAseq_github/* . && rm -d CCLE_scRNAseq_github
 ```
 
-**5.** Install required R packages
+**5.** Install required R packages.
 ```
 Rscript packages.R
 ```
-**5.** Run one of the 6 code modules in R
+**5.** Run one of the 6 code modules in R.
 * module1_expr_heteroge.R         
 * module2_rhp.R                   
 * module3_vitro_vs_vivoI.R   
