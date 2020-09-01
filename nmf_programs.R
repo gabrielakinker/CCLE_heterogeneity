@@ -13,7 +13,7 @@ library(nmf)
 
 nmf_programs <- function(cpm, is.log=F, rank, method="snmf/r", seed=1) {
     
-  if(is.log==F) CP100K_log <- log2((cpm/10) + 1)
+  if(is.log==F) CP100K_log <- log2((cpm/10) + 1) else CP100K_log <- cpm
   CP100K_log <- CP100K_log[apply(CP100K_log, 1, function(x) length(which(x > 3.5)) > ncol(CP100K_log)*0.02),]
   CP100K_log <- CP100K_log - rowMeans(CP100K_log)
   CP100K_log[CP100K_log < 0] <- 0
