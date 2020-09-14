@@ -42,7 +42,7 @@ Rscript packages.R
 
 ### General notes
 
-* Please, note that due to the stochastic nature of methods such as T-distributed Stochastic Neighbor Embedding (t-SNE) and nonnegative matrix factorization (NMF) outputs from module1_expr_heterogeneity.r might slightly differ dependending on the version of R/R packages used.
+* Please, note that due to the stochastic nature of methods such as T-distributed Stochastic Neighbor Embedding (t-SNE) and nonnegative matrix factorization (NMF) outputs from module1_expr_heteroge.r might slightly differ dependending on the version of R/R packages used.
 
 * As all outputs are already provided in the ``Expected_results`` directory, it is possible to run each code module independently.
 
