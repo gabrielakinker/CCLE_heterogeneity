@@ -19,7 +19,7 @@ git clone https://github.com/gabrielakinker/CCLE_heterogeneity.git
 
 **2.** Set the working directory to ``CCLE_heterogeneity``. 
 
-**3.** Download the data provided ([CCLE_scRNAseq_github.zip](https://singlecell.broadinstitute.org/single_cell/data/public/SCP542/pan-cancer-cell-line-heterogeneity?filename=CCLE_scRNAseq_github.zip)), which includes processed, post-QC scRNA-seq data, into the ``CCLE_heterogeneity`` GitHub directory. 
+**3.** Download the data provided ([CCLE_scRNAseq_github.zip](https://singlecell.broadinstitute.org/single_cell/study/SCP542/pan-cancer-cell-line-heterogeneity)), which includes processed, post-QC scRNA-seq data, into the ``CCLE_heterogeneity`` GitHub directory. 
 
 **4.** Unzip files. 
 ```
@@ -48,7 +48,7 @@ Rscript packages.R
 
 * Running module1 takes several hours. 
 
-* Code used for quality control and processing of UMI counts ([UMIcount_data.txt](https://singlecell.broadinstitute.org/single_cell/data/public/SCP542/pan-cancer-cell-line-heterogeneity?filename=UMIcount_data.txt)) can be found in the ``additional_code`` directory. 
+* Code used for quality control and processing of UMI counts ([UMIcount_data.txt](https://singlecell.broadinstitute.org/single_cell/study/SCP542/pan-cancer-cell-line-heterogeneity)) can be found in the ``additional_code`` directory. 
 
 ### **Requirements**
 
