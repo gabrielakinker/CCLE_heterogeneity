@@ -44,7 +44,7 @@ Rscript packages.R
 
 * Please, note that due to the stochastic nature of methods such as T-distributed Stochastic Neighbor Embedding (t-SNE) and nonnegative matrix factorization (NMF) outputs from module1_expr_heteroge.r might slightly differ dependending on the version of R/R packages used.
 
-* As all outputs are already provided in the ``Expected_results`` directory, it is possible to run each code module independently.
+* As all outputs are already provided in the ``Expected_results`` directory ([CCLE_scRNAseq_github.zip](https://singlecell.broadinstitute.org/single_cell/study/SCP542/pan-cancer-cell-line-heterogeneity)), it is possible to run each code module independently.
 
 * Running module1 takes several hours. 
 
