@@ -2,7 +2,7 @@
 # Function for getting heterogeneity programs using tSNE and density-based clustering (DBSCAN)
 # --------------------------------------------------------------------------------------------- 
 
-# - tpm = CPM expression matrix (rows = genes, columns = cells)
+# - cpm = CPM expression matrix (rows = genes, columns = cells)
 # - initial_dims = the number of dimensions that should be retained in the initial PCA step of the tSNE algorithm
 # - perplexity = perplexity parameter to be used by the tSNE algorithm (should not be bigger than 3 * perplexity < ncol(cpm) - 1)
 # - max_iter = number of iterations to be used by the tSNE algorithm
