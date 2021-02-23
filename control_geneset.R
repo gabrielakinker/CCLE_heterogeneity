@@ -2,7 +2,7 @@
 # Function for getting a control geneset
 # --------------------------------------------------------------------------------------------- 
 
-# - ave_tpm = named vector with the average tpm expression of genes in the expression matrix
+# - ave_tpm = named vector with the average tpm/cpm expression of genes in the expression matrix
 # - program = a character vector of genes in the program 
 # - bins = number of bins used to divide ranked genes
 # - size = control gene set size scaling factor (e.g. 100x the size of the original program)
