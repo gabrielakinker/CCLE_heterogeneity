@@ -15,7 +15,7 @@ source("custom_magma.R")
 source("cancer_color_ccle.R")
 source("dbscan_get_sig.R")
 source("robust_nmf_programs.R")
-source("nmf_cell_class")
+source("nmf_cell_class.R")
 
 
 # read scRNA-seq data from cell lines and tumors
@@ -271,16 +271,18 @@ nmf_meta9_ccle_programs <- colnames(nmf_intersect_nc_ccle)[261:278]
 nmf_meta10_ccle <- sort(table(nmf_programs_sig_ccle[,colnames(nmf_intersect_nc_ccle)[278:432]])/length(278:432), decreasing=T)
 nmf_meta10_ccle_programs <- colnames(nmf_intersect_nc_ccle)[278:432]
 
-nmf_meta_all_ccle <- list(skinpig=nmf_meta1_ccle, emtI=nmf_meta2_ccle, emtII=nmf_meta3_ccle, ifn=nmf_meta4_ccle, emtIII=nmf_meta5_ccle, p53snc=nmf_meta6_ccle, episen=nmf_meta7_ccle, stress=nmf_meta8_ccle, protmat=nmf_meta9_ccle, protdreg=nmf_meta10_ccle)                                    
+nmf_meta_all_ccle <- list(skinpig=nmf_meta1_ccle, emtI=nmf_meta2_ccle, emtII=nmf_meta3_ccle, ifn=nmf_meta4_ccle, emtIII=nmf_meta5_ccle, p53snc=nmf_meta6_ccle, episen=nmf_meta7_ccle, stress=nmf_meta8_ccle, protmat=nmf_meta9_ccle, protdreg=nmf_meta10_ccle)       
                                       
+nmf_meta_all_ccle_top25 <- lapply(nmf_meta_all_ccle, function(x) x[x>=0.25]) 
+                                  
 saveRDS(nmf_meta_all_ccle,"Output/module2/nmf_metaprograms_sig_nc_ccle.RDS")
+                                     
+saveRDS(nmf_meta_all_ccle_top25,"Output/module2/nmf_metaprograms_sigtop25_nc_ccle.RDS") 
                                       
-saveRDS(lapply(nmf_meta_all_ccle, function(x) x[x>=0.25]),"Output/module2/nmf_metaprograms_sigtop25_nc_ccle.RDS") 
-                                      
-saveRDS(list(skinpig=nmf_meta1_ccle_programs, emtI=nmf_meta2_ccle_programs, emtII=nmf_meta3_ccle_programs, ifn=nmf_meta4_ccle_programs, emtIII=nmf_meta5_ccle_programs, p53snc=nmf_meta6_ccle_programs, episen=nmf_meta7_ccle_programs, stress=nmf_meta8_ccle_programs, protmat=nmf_meta9_ccle_programs, protdreg=nmf_meta10_ccle_programs),"Output/module2/nmf_metaprograms_programs_nc_ccle.RDS")                                   
-                                      
+saveRDS(list(skinpig=nmf_meta1_ccle_programs, emtI=nmf_meta2_ccle_programs, emtII=nmf_meta3_ccle_programs, ifn=nmf_meta4_ccle_programs, emtIII=nmf_meta5_ccle_programs, p53snc=nmf_meta6_ccle_programs, episen=nmf_meta7_ccle_programs, stress=nmf_meta8_ccle_programs, protmat=nmf_meta9_ccle_programs, protdreg=nmf_meta10_ccle_programs),"Output/module2/nmf_metaprograms_programs_nc_ccle.RDS")                                                                         
+
 # plot NMF gene scores
-nmf_nc_genes <- c(rev(nmf_meta1_ccle), rev(nmf_meta2_ccle), rev(nmf_meta3_ccle), rev(nmf_meta4_ccle), rev(nmf_meta5_ccle), rev(nmf_meta6_ccle), rev(nmf_meta7_ccle), rev(nmf_meta8_ccle), rev(nmf_meta9_ccle), rev(nmf_meta10_ccle))
+nmf_nc_genes <- do.call(c,lapply(nmf_meta_all_ccle_top25, function(x) rev(names(x))))
 nmf_nc_genes <- sapply(unlist(unname(lapply(nmf_programs_genes_ccle, function(x) apply(x, 2, list))), recursive=F)[colnames(nmf_intersect_nc_ccle)], function(x) unlist(x)[nmf_nc_genes])
 rownames(nmf_nc_genes) <- NULL
 nmf_nc_genes[is.na(nmf_nc_genes)] <- 0
