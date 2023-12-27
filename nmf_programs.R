@@ -9,7 +9,7 @@
 
 # Returns a list with NMF program scores for genes and cells
 
-library(nmf)
+library(NMF)
 
 nmf_programs <- function(cpm, is.log=F, rank, method="snmf/r", seed=1) {
     
